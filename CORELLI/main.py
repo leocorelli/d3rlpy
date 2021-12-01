@@ -9,6 +9,6 @@ cql = DiscreteCQL(use_gpu = True)    # instantiate discrete CQL algrithm
 train_episodes, test_episodes = train_test_split(dataset, test_size = 0.2)
 
 #cql.fit(dataset, n_steps = 10000)   # train (offline)
-cql.fit(train_episodes, eval_episodes=test_episodes, n_epochs=1, n_steps = 10000)
+cql.fit(train_episodes, eval_episodes=test_episodes, n_steps = 10000)
 # actions = cql.predict(x)    # generate actions
 

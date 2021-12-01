@@ -11,5 +11,5 @@ cql = DiscreteCQL(use_gpu = True)    # instantiate discrete CQL algrithm
 train_episodes, test_episodes = train_test_split(dataset, test_size = 0.2)
 
 #cql.fit(dataset, n_steps = 10000)   # train (offline)
-cql.fit(train_episodes, eval_episodes=test_episodes, n_steps = 10000, scorers = {'average_reward': evaluate_on_environment(env),'estimated_q_values':initial_state_value_estimation_scorer})
+cql.fit(train_episodes, eval_episodes=test_episodes, n_epochs = 10, scorers = {'average_reward': evaluate_on_environment(env),'estimated_q_values':initial_state_value_estimation_scorer})
 # actions = cql.predict(x)    # generate actions

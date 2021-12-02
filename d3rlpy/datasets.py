@@ -61,7 +61,7 @@ def get_cartpole(
     )
 
     # environment
-    env = gym.make("CartPole-v0")
+    env = gym.make("CartPole-v1")
 
     return dataset, env
 

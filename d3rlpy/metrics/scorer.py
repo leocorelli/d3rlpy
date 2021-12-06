@@ -37,14 +37,17 @@ class AlgoProtocol(Protocol):
 
 
 class DynamicsProtocol(Protocol):
-    def predict(
-        self,
-        x: Union[np.ndarray, List[Any]],
-        action: Union[np.ndarray, List[Any]],
-        with_variance: bool = False,
-    ) -> Union[
-        Tuple[np.ndarray, np.ndarray], Tuple[np.ndarray, np.ndarray, np.ndarray]
-    ]:
+    def predict(self,
+                x: Union[np.ndarray,
+                         List[Any]],
+                action: Union[np.ndarray,
+                              List[Any]],
+                with_variance: bool = False,
+                ) -> Union[Tuple[np.ndarray,
+                                 np.ndarray],
+                           Tuple[np.ndarray,
+                                 np.ndarray,
+                                 np.ndarray]]:
         ...
 
     @property
@@ -71,15 +74,15 @@ def _make_batches(
 
 
 def true_q_scorer(algo: AlgoProtocol, episodes: List[Episode]) -> float:
-
     for episode in episodes:
         for batch in _make_batches(episode, WINDOW_SIZE, algo.n_frames):
-
+            # get initial actions and values
             init_actions = algo.predict(
-                [batch.next_observations[0]])  # initial actions
+                [batch.next_observations[0]])
             init_values = algo.predict_value(
-                [batch.next_observations[0]], init_actions)  # initial values
+                [batch.next_observations[0]], init_actions)
 
+            # calculate true q value
             mask = (1.0 - np.asarray(batch.terminals)).reshape(-1)
             rewards = np.asarray(batch.next_rewards).reshape(-1)
             if algo.reward_scaler:

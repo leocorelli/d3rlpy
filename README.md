@@ -44,7 +44,7 @@ d3rlpy supports Linux, macOS and Windows.
 
 ### PyPI (recommended)
 [![PyPI version](https://badge.fury.io/py/d3rlpy.svg)](https://badge.fury.io/py/d3rlpy)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/d3rlpy)
+![PyPI - Downloads](https://github.com/leocorelli/d3rlpy.git)
 ```
 $ pip install d3rlpy
 ```

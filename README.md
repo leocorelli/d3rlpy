@@ -31,7 +31,7 @@ cql.fit(
 - Original paper: https://arxiv.org/abs/2111.03788
 
 ## Installation
-1. Clone repository $ pip install https://github.com/leocorelli/d3rlpy.git
+1. Clone repository '''$ pip install https://github.com/leocorelli/d3rlpy.git'''
 2. 
 
 

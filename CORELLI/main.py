@@ -17,4 +17,4 @@ cql.fit(train_episodes, eval_episodes=test_episodes, n_epochs=5, scorers={'avera
 
 fqe = DiscreteFQE(algo=cql, use_gpu=True)
 fqe.fit(train_episodes, eval_episodes=test_episodes, n_epochs=5, scorers={
-        'estimated_q_values': initial_state_value_estimation_scorer, 'soft_opc': soft_opc_scorer(70)}, with_timestamp=False, experiment_name='DiscreteFQE_v0')
+        'estimated_q_values': initial_state_value_estimation_scorer, 'soft_opc': soft_opc_scorer(70), 'true_q_values': true_q_scorer}, with_timestamp=False, experiment_name='DiscreteFQE_v0')

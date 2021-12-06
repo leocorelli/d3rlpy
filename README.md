@@ -18,7 +18,7 @@ train_episodes, test_episodes = train_test_split(dataset, test_size=0.2)
 cql.fit(
     train_episodes,
     eval_episodes=test_episodes,
-    n_epochs=5,
+    n_epochs=10,
     scorers={
         'average_reward': evaluate_on_environment(env),
         'estimated_q_values': initial_state_value_estimation_scorer,

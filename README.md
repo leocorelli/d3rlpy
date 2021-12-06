@@ -5,7 +5,7 @@
 
 d3rlpy is an offline deep reinforcement learning library for practitioners and researchers. In this project, I added to d3rlpy and used it to successfully build an offline deep reinforcement learning pipeline. After forking d3rlpy I did two things: 1) updated scorers.py to add a true Q value scorer function and 2) wrote my own script main.py, in which I successfully implemented and trained an agent to beat the cartpole-v0 task. I then evaluated my results using the off policy evaluation method of fitted Q evaluation, and plotted my results along the way.
 
-Below is an example of how to implement d3rlpy to build an offline deep reinforcement learning pipeline. 
+Below is an example of how to implement d3rlpy to build an offline deep reinforcement learning pipeline:
 
 ```py
 import d3rlpy

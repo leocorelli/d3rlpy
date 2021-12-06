@@ -1,6 +1,6 @@
 <p align="center"><img align="center" width="300px" src="assets/logo.png"></p>
 
-# d3rlpy: An offline deep reinforcement learning library
+# AIPI 530 Final Project: Using d3rlpy to perform offline deep reinforcement learning
 
 ![test](https://github.com/takuseno/d3rlpy/workflows/test/badge.svg)
 ![build](https://github.com/takuseno/d3rlpy/workflows/build/badge.svg)

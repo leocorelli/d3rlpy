@@ -1,6 +1,7 @@
 <p align="center"><img align="center" width="300px" src="assets/logo.png"></p>
 
 # AIPI 530 Final Project: Using d3rlpy to perform offline deep reinforcement learning
+# by Leo Corelli
 
 ![test](https://github.com/takuseno/d3rlpy/workflows/test/badge.svg)
 ![build](https://github.com/takuseno/d3rlpy/workflows/build/badge.svg)
@@ -10,7 +11,7 @@
 [![Gitter](https://img.shields.io/gitter/room/d3rlpy/d3rlpy)](https://gitter.im/d3rlpy/d3rlpy)
 ![MIT](https://img.shields.io/badge/license-MIT-blue)
 
-d3rlpy is an offline deep reinforcement learning library for practitioners and researchers.
+d3rlpy is an offline deep reinforcement learning library for practitioners and researchers. In this project, I forked d3rlpy and did two things: 1) updated scorers.py to add a true Q value scorer function and 2) wrote my own script main.py, in which I successfully implemented and trained an agent to beat the cartpole-v0 task.
 
 ```py
 import d3rlpy

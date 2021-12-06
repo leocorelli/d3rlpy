@@ -1,52 +1,42 @@
 <p align="center"><img align="center" width="300px" src="assets/logo.png"></p>
 
-# d3rlpy: An offline deep reinforcement learning library
+# AIPI 530 Final Project: Using d3rlpy to perform offline deep reinforcement learning
+# by Leo Corelli
 
-![test](https://github.com/takuseno/d3rlpy/workflows/test/badge.svg)
-![build](https://github.com/takuseno/d3rlpy/workflows/build/badge.svg)
-[![Documentation Status](https://readthedocs.org/projects/d3rlpy/badge/?version=latest)](https://d3rlpy.readthedocs.io/en/latest/?badge=latest)
-[![codecov](https://codecov.io/gh/takuseno/d3rlpy/branch/master/graph/badge.svg?token=AQ02USKN6Y)](https://codecov.io/gh/takuseno/d3rlpy)
-[![Maintainability](https://api.codeclimate.com/v1/badges/c9162eb736d0b0f612d8/maintainability)](https://codeclimate.com/github/takuseno/d3rlpy/maintainability)
-[![Gitter](https://img.shields.io/gitter/room/d3rlpy/d3rlpy)](https://gitter.im/d3rlpy/d3rlpy)
-![MIT](https://img.shields.io/badge/license-MIT-blue)
+d3rlpy is an offline deep reinforcement learning library for practitioners and researchers. In this project, I added to d3rlpy and used it to successfully build an offline deep reinforcement learning pipeline. After forking d3rlpy I did two things: 1) updated scorers.py to add a true Q value scorer function and 2) wrote my own script main.py, in which I successfully implemented and trained an agent to beat the cartpole-v0 task. I then evaluated my results using the off policy evaluation method of fitted Q evaluation, and plotted my results along the way.
 
-d3rlpy is an offline deep reinforcement learning library for practitioners and researchers.
+Below is an example of how to implement d3rlpy to build an offline deep reinforcement learning pipeline. 
 
 ```py
 import d3rlpy
+from sklearn.model_selection import train_test_split
 
-dataset, env = d3rlpy.datasets.get_dataset("hopper-medium-v0")
+dataset, env = get_cartpole() 
+cql = DiscreteCQL(use_gpu=True)   
 
-# prepare algorithm
-sac = d3rlpy.algos.SAC()
-
-# train offline
-sac.fit(dataset, n_steps=1000000)
-
-# train online
-sac.fit_online(env, n_steps=1000000)
-
-# ready to control
-actions = sac.predict(x)
+train_episodes, test_episodes = train_test_split(dataset, test_size=0.2)
+cql.fit(
+    train_episodes,
+    eval_episodes=test_episodes,
+    n_epochs=5,
+    scorers={
+        'average_reward': evaluate_on_environment(env),
+        'estimated_q_values': initial_state_value_estimation_scorer,
+        'true_q_values': true_q_scorer},
+    with_timestamp=False,
+    experiment_name='DiscreteCQL_v0')
 ```
 
-- Documentation: https://d3rlpy.readthedocs.io
-- Paper: https://arxiv.org/abs/2111.03788
+- Original documentation: https://d3rlpy.readthedocs.io
+- Original paper: https://arxiv.org/abs/2111.03788
 
-## key features
+## Installation
+1) Clone repository [![repo](https://github.com/leocorelli/d3rlpy.git)
 
-### :zap: Most Practical RL Library Ever
-- **offline RL**: d3rlpy supports state-of-the-art offline RL algorithms. Offline RL is extremely powerful when the online interaction is not feasible during training (e.g. robotics, medical).
-- **online RL**: d3rlpy also supports conventional state-of-the-art online training algorithms without any compromising, which means that you can solve any kinds of RL problems only with `d3rlpy`.
-- **advanced engineering**: d3rlpy is designed to implement the faster and efficient training algorithms. For example, you can train Atari environments with x4 less memory space and as fast as the fastest RL library.
 
-### :beginner: Easy-To-Use API
-- **zero-knowledge of DL library**: d3rlpy provides many state-of-the-art algorithms through intuitive APIs. You can become a RL engineer even without knowing how to use deep learning libraries.
-- **scikit-learn compatibility**: d3rlpy is not only easy, but also completely compatible with scikit-learn API, which means that you can maximize your productivity with the useful scikit-learn's utilities.
 
-### :rocket: Beyond State-Of-The-Art
-- **distributional Q function**: d3rlpy is the first library that supports distributional Q functions in the all algorithms. The distributional Q function is known as the very powerful method to achieve the state-of-the-performance.
-- **many tweek options**: d3rlpy is also the first to support N-step TD backup and ensemble value functions in the all algorithms, which lead you to the place no one ever reached yet.
+
+
 
 
 ## installation
@@ -54,7 +44,7 @@ d3rlpy supports Linux, macOS and Windows.
 
 ### PyPI (recommended)
 [![PyPI version](https://badge.fury.io/py/d3rlpy.svg)](https://badge.fury.io/py/d3rlpy)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/d3rlpy)
+![PyPI - Downloads](https://github.com/leocorelli/d3rlpy.git)
 ```
 $ pip install d3rlpy
 ```

@@ -27,8 +27,8 @@ cql.fit(
     experiment_name='DiscreteCQL_v0')
 ```
 
-- Original Documentation: https://d3rlpy.readthedocs.io
-- Original Paper: https://arxiv.org/abs/2111.03788
+- Original documentation: https://d3rlpy.readthedocs.io
+- Original paper: https://arxiv.org/abs/2111.03788
 
 ## key features
 

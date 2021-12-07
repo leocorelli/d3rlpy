@@ -86,7 +86,7 @@ The benchmark results are available [d3rlpy-benchmarks](https://github.com/takus
 
 ## examples
 ### MuJoCo
-<p align="center"><img align="center" width="160px" src="assets/mujoco_hopper.gif"></p>
+<p align="center"><img align="center" width="160px" src="https://github.com/leocorelli/d3rlpy/blob/master/CORELLI/average_reward.png"></p>
 
 ```py
 import d3rlpy

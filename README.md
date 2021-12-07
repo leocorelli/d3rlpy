@@ -48,6 +48,15 @@ d3rlpy supports Linux, macOS and Windows.
     - FQE True Q value: ```/d3rlpy_logs/DiscreteFQE_v0/true_q_values.csv```
     - FQE Estimated Q value: ```/d3rlpy_logs/DiscreteFQE_v0/estimated_q_values.csv```
 
+## get started
+1. Run ```main.py``` in ```/d3rlpy/CORELLI```
+2. Logs:
+    - Average reward: ```/d3rlpy_logs/DiscreteCQL_v0/average_reward.csv```
+    - True Q value: ```/d3rlpy_logs/DiscreteCQL_v0/true_q_values.csv```
+    - Estimated Q value: ```/d3rlpy_logs/DiscreteCQL_v0/estimated_q_values.csv```
+    - FQE True Q value: ```/d3rlpy_logs/DiscreteFQE_v0/true_q_values.csv```
+    - FQE Estimated Q value: ```/d3rlpy_logs/DiscreteFQE_v0/estimated_q_values.csv```
+
 
 ## supported algorithms
 | algorithm | discrete control | continuous control | offline RL? |

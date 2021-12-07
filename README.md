@@ -52,6 +52,13 @@ d3rlpy supports Linux, macOS and Windows.
 
 The general format of the offline reinforcement learning pipeline implemented in main.py can be applied to more than just the cartpole-v0 environment. For a full list of available datasets, please refer to /d3rlpy/datasets.
 
+## results
+In this project I used a discrete CQL algorithm to train an agent to play the cartpole game. I then evaluated my policy using off policy evaluation (OPE) by performing fitted q evaluation (FQE). The results of my experiments can be found below. *Note: the maximum reward in cartpole-v0 is 200.0*
+
+<p align="center"><img align="center" width="700px" src="https://github.com/leocorelli/d3rlpy/blob/master/CORELLI/average_reward.png"></p>
+<p align="center"><img align="center" width="700px" src="https://github.com/leocorelli/d3rlpy/blob/master/CORELLI/true_q.png"></p>
+<p align="center"><img align="center" width="700px" src="https://github.com/leocorelli/d3rlpy/blob/master/CORELLI/estimated_q.png"></p>
+<p align="center"><img align="center" width="700px" src="https://github.com/leocorelli/d3rlpy/blob/master/CORELLI/fqe.png"></p>
 
 ## supported algorithms
 | algorithm | discrete control | continuous control | offline RL? |
@@ -83,15 +90,6 @@ The general format of the offline reinforcement learning pipeline implemented in
   - [Conservative Offline Model-Based Policy Optimization (COMBO)](https://arxiv.org/abs/2102.08363)
 - Q-functions
   - [Fully parametrized Quantile Function](https://arxiv.org/abs/1911.02140) (experimental)
-
-## results
-In this project I used a discrete CQL algorithm to train an agent to play the cartpole game. I then evaluated my policy using off policy evaluation (OPE) by performing fitted q evaluation (FQE). The results of my experiments can be found below. *Note: the maximum reward in cartpole-v0 is 200.0*
-
-<p align="center"><img align="center" width="700px" src="https://github.com/leocorelli/d3rlpy/blob/master/CORELLI/average_reward.png"></p>
-<p align="center"><img align="center" width="700px" src="https://github.com/leocorelli/d3rlpy/blob/master/CORELLI/true_q.png"></p>
-<p align="center"><img align="center" width="700px" src="https://github.com/leocorelli/d3rlpy/blob/master/CORELLI/estimated_q.png"></p>
-<p align="center"><img align="center" width="700px" src="https://github.com/leocorelli/d3rlpy/blob/master/CORELLI/fqe.png"></p>
-
 
 ## tutorials
 Try a cartpole example on Google Colaboratory!

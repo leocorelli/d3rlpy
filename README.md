@@ -30,6 +30,8 @@ cql.fit(
 - Original paper: https://arxiv.org/abs/2111.03788
 
 ## Installation
+d3rlpy supports Linux, macOS and Windows.
+
 1. Clone repository: ```$ git clone https://github.com/leocorelli/d3rlpy.git```
 2. Install requirements: ```$ pip install Cython numpy``` and ```$ pip install -e```
 3. Run main.py (in CORELLI folder)
@@ -38,29 +40,6 @@ cql.fit(
 
 
 
-
-## installation
-d3rlpy supports Linux, macOS and Windows.
-
-### PyPI (recommended)
-[![PyPI version](https://badge.fury.io/py/d3rlpy.svg)](https://badge.fury.io/py/d3rlpy)
-![PyPI - Downloads](https://github.com/leocorelli/d3rlpy.git)
-```
-$ pip install d3rlpy
-```
-### Anaconda
-[![Anaconda-Server Badge](https://anaconda.org/conda-forge/d3rlpy/badges/version.svg)](https://anaconda.org/conda-forge/d3rlpy)
-[![Anaconda-Server Badge](https://anaconda.org/conda-forge/d3rlpy/badges/platforms.svg)](https://anaconda.org/conda-forge/d3rlpy)
-[![Anaconda-Server Badge](https://anaconda.org/conda-forge/d3rlpy/badges/downloads.svg)](https://anaconda.org/conda-forge/d3rlpy)
-```
-$ conda install -c conda-forge d3rlpy
-```
-
-### Docker
-![Docker Pulls](https://img.shields.io/docker/pulls/takuseno/d3rlpy)
-```
-$ docker run -it --gpus all --name d3rlpy takuseno/d3rlpy:latest bash
-```
 
 ## supported algorithms
 | algorithm | discrete control | continuous control | offline RL? |

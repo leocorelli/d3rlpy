@@ -50,6 +50,8 @@ d3rlpy supports Linux, macOS and Windows.
     - FQE True Q value: ```/d3rlpy_logs/DiscreteFQE_v0/true_q_values.csv```
     - FQE Estimated Q value: ```/d3rlpy_logs/DiscreteFQE_v0/estimated_q_values.csv```
 
+The general format of the offline reinforcement learning pipeline implemented in main.py can be applied to more than just the cartpole-v0 environment. For a full list of available datasets, please refer to /d3rlpy/datasets
+
 
 ## supported algorithms
 | algorithm | discrete control | continuous control | offline RL? |

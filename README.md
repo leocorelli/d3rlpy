@@ -44,11 +44,11 @@ d3rlpy supports Linux, macOS and Windows.
 ## get started
 1. Run ```main.py``` in ```/d3rlpy/CORELLI```
 2. Logs:
-    - Average reward: ```/d3rlpy_logs/DiscreteCQL_v0/average_reward.csv```
-    - True Q value: ```/d3rlpy_logs/DiscreteCQL_v0/true_q_values.csv```
-    - Estimated Q value: ```/d3rlpy_logs/DiscreteCQL_v0/estimated_q_values.csv```
-    - FQE True Q value: ```/d3rlpy_logs/DiscreteFQE_v0/true_q_values.csv```
-    - FQE Estimated Q value: ```/d3rlpy_logs/DiscreteFQE_v0/estimated_q_values.csv```
+    - Average reward: ```./d3rlpy_logs/DiscreteCQL_v0/average_reward.csv```
+    - True Q value: ```./d3rlpy_logs/DiscreteCQL_v0/true_q_values.csv```
+    - Estimated Q value: ```./d3rlpy_logs/DiscreteCQL_v0/estimated_q_values.csv```
+    - FQE True Q value: ```./d3rlpy_logs/DiscreteFQE_v0/true_q_values.csv```
+    - FQE Estimated Q value: ```./d3rlpy_logs/DiscreteFQE_v0/estimated_q_values.csv```
 
 The general format of the offline reinforcement learning pipeline implemented in main.py can be applied to more than just the cartpole-v0 environment. For a full list of available datasets, please refer to ```datasets.py``` in ```/d3rlpy```.
 

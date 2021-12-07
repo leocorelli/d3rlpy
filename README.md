@@ -7,7 +7,6 @@ d3rlpy is an offline deep reinforcement learning library for practitioners and r
 Below is an example of how to implement d3rlpy to build an offline deep reinforcement learning pipeline:
 
 ```py
-import d3rlpy
 from d3rlpy.datasets import get_cartpole
 from d3rlpy.algos import DiscreteCQL
 from d3rlpy.metrics.scorer import evaluate_on_environment

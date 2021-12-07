@@ -28,6 +28,7 @@ cql.fit(
 
 - Original documentation: https://d3rlpy.readthedocs.io
 - Original paper: https://arxiv.org/abs/2111.03788
+- Original repository: https://github.com/takuseno/d3rlpy
 
 ## Installation
 d3rlpy supports Linux, macOS and Windows.

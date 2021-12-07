@@ -52,7 +52,7 @@ d3rlpy supports Linux, macOS and Windows.
 
 The general format of the offline reinforcement learning pipeline implemented in main.py can be applied to more than just the cartpole-v0 environment. For a full list of available datasets, please refer to ```datasets.py``` in ```/d3rlpy```.
 
-*For other datasets, additional imports may be required.*
+*Note: For other datasets, additional imports may be required.*
 
 ## results
 In this project I used a discrete CQL algorithm to train an agent to play the cartpole game. I then evaluated my policy using off policy evaluation (OPE) by performing fitted q evaluation (FQE). The results of my experiments can be found below. *Note: the maximum reward in cartpole-v0 is 200.0*

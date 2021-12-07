@@ -50,7 +50,7 @@ d3rlpy supports Linux, macOS and Windows.
     - FQE True Q value: ```/d3rlpy_logs/DiscreteFQE_v0/true_q_values.csv```
     - FQE Estimated Q value: ```/d3rlpy_logs/DiscreteFQE_v0/estimated_q_values.csv```
 
-The general format of the offline reinforcement learning pipeline implemented in main.py can be applied to more than just the cartpole-v0 environment. For a full list of available datasets, please refer to ```$/d3rlpy/datasets```.
+The general format of the offline reinforcement learning pipeline implemented in main.py can be applied to more than just the cartpole-v0 environment. For a full list of available datasets, please refer to ```/d3rlpy/datasets```.
 
 ## results
 In this project I used a discrete CQL algorithm to train an agent to play the cartpole game. I then evaluated my policy using off policy evaluation (OPE) by performing fitted q evaluation (FQE). The results of my experiments can be found below. *Note: the maximum reward in cartpole-v0 is 200.0*

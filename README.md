@@ -8,7 +8,13 @@ Below is an example of how to implement d3rlpy to build an offline deep reinforc
 
 ```py
 import d3rlpy
+from d3rlpy.datasets import get_cartpole
+from d3rlpy.algos import DiscreteCQL
+from d3rlpy.metrics.scorer import evaluate_on_environment
+from d3rlpy.metrics.scorer import initial_state_value_estimation_scorer
+from d3rlpy.metrics.scorer import true_q_scorer
 from sklearn.model_selection import train_test_split
+
 
 dataset, env = get_cartpole() 
 cql = DiscreteCQL(use_gpu=True)   

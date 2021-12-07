@@ -36,54 +36,6 @@ d3rlpy supports Linux, macOS and Windows.
 2. Install requirements: ```$ pip install Cython numpy``` and ```$ pip install -e```
 3. Run main.py (in CORELLI folder)
 
-
-
-
-
-
-## supported algorithms
-| algorithm | discrete control | continuous control | offline RL? |
-|:-|:-:|:-:|:-:|
-| Behavior Cloning (supervised learning) | :white_check_mark: | :white_check_mark: | |
-| [Deep Q-Network (DQN)](https://www.nature.com/articles/nature14236) | :white_check_mark: | :no_entry: | |
-| [Double DQN](https://arxiv.org/abs/1509.06461) | :white_check_mark: | :no_entry: | |
-| [Deep Deterministic Policy Gradients (DDPG)](https://arxiv.org/abs/1509.02971) | :no_entry: | :white_check_mark: | |
-| [Twin Delayed Deep Deterministic Policy Gradients (TD3)](https://arxiv.org/abs/1802.09477) | :no_entry: | :white_check_mark: | |
-| [Soft Actor-Critic (SAC)](https://arxiv.org/abs/1812.05905) | :white_check_mark: | :white_check_mark: | |
-| [Batch Constrained Q-learning (BCQ)](https://arxiv.org/abs/1812.02900) | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| [Bootstrapping Error Accumulation Reduction (BEAR)](https://arxiv.org/abs/1906.00949) | :no_entry: | :white_check_mark: | :white_check_mark: |
-| [Advantage-Weighted Regression (AWR)](https://arxiv.org/abs/1910.00177) | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| [Conservative Q-Learning (CQL)](https://arxiv.org/abs/2006.04779) | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| [Advantage Weighted Actor-Critic (AWAC)](https://arxiv.org/abs/2006.09359) | :no_entry: | :white_check_mark: | :white_check_mark: |
-| [Critic Reguralized Regression (CRR)](https://arxiv.org/abs/2006.15134) | :no_entry: | :white_check_mark: | :white_check_mark: |
-| [Policy in Latent Action Space (PLAS)](https://arxiv.org/abs/2011.07213) | :no_entry: | :white_check_mark: | :white_check_mark: |
-| [TD3+BC](https://arxiv.org/abs/2106.06860) | :no_entry: | :white_check_mark: | :white_check_mark: |
-| [Implicit Q-Learning (IQL)](https://arxiv.org/abs/2110.06169) | :no_entry: | :white_check_mark: | :white_check_mark: |
-
-## supported Q functions
-- [x] standard Q function
-- [x] [Quantile Regression](https://arxiv.org/abs/1710.10044)
-- [x] [Implicit Quantile Network](https://arxiv.org/abs/1806.06923)
-
-## other features
-Basically, all features are available with every algorithm.
-
-- [x] evaluation metrics in a scikit-learn scorer function style
-- [x] export greedy-policy as TorchScript or ONNX
-- [x] parallel cross validation with multiple GPU
-
-## experimental features
-- Model-based Algorithms
-  - [Model-based Offline Policy Optimization (MOPO)](https://arxiv.org/abs/2005.13239)
-  - [Conservative Offline Model-Based Policy Optimization (COMBO)](https://arxiv.org/abs/2102.08363)
-- Q-functions
-  - [Fully parametrized Quantile Function](https://arxiv.org/abs/1911.02140) (experimental)
-
-## benchmark results
-d3rlpy is benchmarked to ensure the implementation quality.
-The benchmark scripts are available [reproductions](https://github.com/takuseno/d3rlpy/tree/master/reproductions) directory.
-The benchmark results are available [d3rlpy-benchmarks](https://github.com/takuseno/d3rlpy-benchmarks) repository.
-
 ## Results
 <p align="center"><img align="center" width="700px" src="https://github.com/leocorelli/d3rlpy/blob/master/CORELLI/average_reward.png"></p>
 <p align="center"><img align="center" width="700px" src="https://github.com/leocorelli/d3rlpy/blob/master/CORELLI/true_q.png"></p>

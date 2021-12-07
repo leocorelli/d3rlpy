@@ -37,11 +37,11 @@ d3rlpy supports Linux, macOS and Windows.
 2. Install requirements: ```$ pip install Cython numpy``` and ```$ pip install -e```
 3. Run ```main.py``` (in CORELLI folder)
 4. Logs
-    Average reward: ```/d3rlpy_logs/DiscreteCQL_v0/average_reward.csv```
-    True Q value: ```/d3rlpy_logs/DiscreteCQL_v0/true_q_values.csv```
-    Estimated Q value: ```/d3rlpy_logs/DiscreteCQL_v0/estimated_q_values.csv```
-    FQE True Q value: ```/d3rlpy_logs/DiscreteFQE_v0/true_q_values.csv```
-    FQE Estimated Q value: ```/d3rlpy_logs/DiscreteFQE_v0/estimated_q_values.csv```
+    - Average reward: ```/d3rlpy_logs/DiscreteCQL_v0/average_reward.csv```
+    - True Q value: ```/d3rlpy_logs/DiscreteCQL_v0/true_q_values.csv```
+    - Estimated Q value: ```/d3rlpy_logs/DiscreteCQL_v0/estimated_q_values.csv```
+    - FQE True Q value: ```/d3rlpy_logs/DiscreteFQE_v0/true_q_values.csv```
+    - FQE Estimated Q value: ```/d3rlpy_logs/DiscreteFQE_v0/estimated_q_values.csv```
 
 
 ## Results

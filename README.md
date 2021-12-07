@@ -62,6 +62,8 @@ The paper is available [here](https://arxiv.org/abs/2111.03788).
 }
 ```
 
+This repo was originally forked from user takuseno on GitHub. Tremendous thank you to them for all of their excellent work on this repository. All of my original files can be found in the CORELLI folder. In addition to files found here, I added a single function in scorer.py in d3rlpy/metrics in order to calculate the true q value at the end of each training epoch.
+
 ## acknowledgement
 This work is supported by Information-technology Promotion Agency, Japan
 (IPA), Exploratory IT Human Resources Project (MITOU Program) in the fiscal

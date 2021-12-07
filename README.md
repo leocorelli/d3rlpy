@@ -43,35 +43,12 @@ d3rlpy supports Linux, macOS and Windows.
 <p align="center"><img align="center" width="700px" src="https://github.com/leocorelli/d3rlpy/blob/master/CORELLI/fqe.png"></p>
 
 
-
-
 ## tutorials
 Try a cartpole example on Google Colaboratory!
 
 - offline RL tutorial: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/takuseno/d3rlpy/blob/master/tutorials/cartpole.ipynb)
 - online RL tutorial: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/takuseno/d3rlpy/blob/master/tutorials/online.ipynb)
 
-## contributions
-Any kind of contribution to d3rlpy would be highly appreciated!
-Please check the [contribution guide](CONTRIBUTING.md).
-
-The release planning can be checked at [milestones](https://github.com/takuseno/d3rlpy/milestones).
-
-## community
-| Channel | Link |
-|:-|:-|
-| Chat | [Gitter](https://gitter.im/d3rlpy/d3rlpy) |
-| Issues | [GitHub Issues](https://github.com/takuseno/d3rlpy/issues) |
-
-## family projects
-| Project | Description |
-|:-:|:-|
-| [d4rl-pybullet](https://github.com/takuseno/d4rl-pybullet) | An offline RL datasets of PyBullet tasks |
-| [d4rl-atari](https://github.com/takuseno/d4rl-atari) | A d4rl-style library of Google's Atari 2600 datasets |
-| [MINERVA](https://github.com/takuseno/minerva) | An out-of-the-box GUI tool for offline RL |
-
-## roadmap
-The roadmap to the future release is available in [ROADMAP.md](ROADMAP.md).
 
 ## citation
 The paper is available [here](https://arxiv.org/abs/2111.03788).

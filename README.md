@@ -35,7 +35,7 @@ d3rlpy supports Linux, macOS and Windows.
 
 1. Clone repository: ```$ git clone https://github.com/leocorelli/d3rlpy.git```
 2. Install requirements: ```$ pip install Cython numpy``` and ```$ pip install -e```
-3. Run ```main.py``` (in CORELLI folder)
+3. Run ```main.py``` in ```/d3rlpy/CORELLI```
 4. Logs:
     - Average reward: ```/d3rlpy_logs/DiscreteCQL_v0/average_reward.csv```
     - True Q value: ```/d3rlpy_logs/DiscreteCQL_v0/true_q_values.csv```

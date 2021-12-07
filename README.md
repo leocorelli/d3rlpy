@@ -35,7 +35,7 @@ d3rlpy supports Linux, macOS and Windows.
 
 1. Clone repository: ```$ git clone https://github.com/leocorelli/d3rlpy.git```
 2. Install requirements: ```$ pip install Cython numpy``` and ```$ pip install -e```
-3. Run main.py (in CORELLI folder)
+3. Run ```main.py``` (in CORELLI folder)
 
 ## Results
 In this project I used a discrete CQL algorithm to train an agent to play the cartpole game. I then evaluated my policy using off policy evaluation (OPE) by performing fitted q evaluation (FQE). The results of my experiments can be found below. *Note: the maximum reward in cartpole-v0 is 200.0*

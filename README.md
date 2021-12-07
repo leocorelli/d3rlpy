@@ -35,7 +35,7 @@ cql.fit(
 - Original paper: https://arxiv.org/abs/2111.03788
 - Original repository: https://github.com/takuseno/d3rlpy
 
-## Installation
+## installation
 d3rlpy supports Linux, macOS and Windows.
 
 1. Clone repository: ```$ git clone https://github.com/leocorelli/d3rlpy.git```
@@ -80,7 +80,7 @@ d3rlpy supports Linux, macOS and Windows.
 - Q-functions
   - [Fully parametrized Quantile Function](https://arxiv.org/abs/1911.02140) (experimental)
 
-## Results
+## results
 In this project I used a discrete CQL algorithm to train an agent to play the cartpole game. I then evaluated my policy using off policy evaluation (OPE) by performing fitted q evaluation (FQE). The results of my experiments can be found below. *Note: the maximum reward in cartpole-v0 is 200.0*
 
 <p align="center"><img align="center" width="700px" src="https://github.com/leocorelli/d3rlpy/blob/master/CORELLI/average_reward.png"></p>

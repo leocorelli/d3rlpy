@@ -7,7 +7,7 @@ from d3rlpy.metrics.scorer import soft_opc_scorer
 from d3rlpy.metrics.scorer import true_q_scorer
 from sklearn.model_selection import train_test_split
 
-dataset, env = get_atari('breakout-expert-v0')
+dataset, env = get_atari('breakout-mixed-v0')
 cql = DiscreteCQL(use_gpu=True, n_frames = 4, scaler = 'pixel')    # instantiate discrete CQL algrithm
 
 train_episodes, test_episodes = train_test_split(dataset, test_size=0.2)
